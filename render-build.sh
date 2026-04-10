@@ -2,6 +2,6 @@
 # exit on error
 set -o errexit
 
-npm install
-npm run build
+npm install --include=dev
+npx tsx script/build.ts
 pip install python-docx
